@@ -1,0 +1,188 @@
+
+
+.container{
+
+	/* size */
+
+	height: 100vh;
+	width: 100vw;
+	
+
+
+	/*background */
+
+	background-color: lightgray;
+
+    /* font */
+    
+   
+	font-family: 'Karla', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+
+
+	/*display */
+
+	display: grid;
+	grid-template-columns: repeat(2,0.4fr);
+    grid-auto-rows: minmax(500px, auto);
+	
+	
+
+	/* position */
+
+    
+	
+	box-sizing: border-box;
+	align-content: center;
+	justify-content:center;
+	grid-template-areas: 
+	 "header  header"
+	 "content1 content2"
+	 ;
+
+
+
+
+
+
+}
+
+
+  
+	
+
+
+
+.container div {
+
+ padding:10px;
+
+
+
+
+}
+
+.header{
+
+	grid-area: header;
+	
+	background-color: #ffff;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+
+
+
+
+
+	
+}
+
+
+.header h1{
+
+	color: hsl(179, 62%, 43%);
+}
+
+.header p1{
+
+    color: hsl(71, 73%, 54%);
+
+
+}
+
+.header p2{
+
+	
+ color: gray;
+
+
+}
+
+.header p3{
+
+	color: gray;
+}
+
+
+.header h1, p,p1,p2,p3{
+
+	padding:20px;
+}
+
+
+
+.content1{
+	grid-area: content1;
+	background-color: hsl(179, 62%, 43%);
+	border-bottom-left-radius: 10px;
+	color: #fff;
+
+	
+}
+
+.content1 p{
+
+	padding: 20px;
+}
+
+button.btn {
+
+	background-color:hsl(71, 73%, 54%);
+	border: none;
+	font-size: 16px;
+	width:300px;
+	text-align:center;
+	margin-left:2rem;
+	border-radius: 5px;
+	height:50px;
+	color: #fff;
+	cursor: pointer;
+
+
+
+
+
+}
+
+
+
+.content2{
+    grid-area: content2;
+	background-color: hsl(179, 62%, 43%);
+	border-bottom-right-radius: 10px;
+	opacity: 80%;
+	color: #fff;
+		
+}
+
+.content2 p{
+
+	padding:20px;
+	opacity:60%;
+
+}
+
+@media only screen and (max-width:0.080fr){
+	.container{
+
+		grid-template-columns: 0.1fr
+		grid-template-rows: minmax(300px, auto) ; 
+		grid-template-areas:
+		"header"
+		"content1"
+		"content2";
+
+
+
+
+
+	}
+
+
+
+
+
+
+}
