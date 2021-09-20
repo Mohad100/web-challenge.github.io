@@ -1,17 +1,16 @@
 
-
 .container{
 
 	/* size */
 
-	height: 100vh;
+	height: 100%;
 	width: 100vw;
 	
 
 
 	/*background */
 
-	background-color: lightgray;
+	background-color: #fff;
 
     /* font */
     
@@ -25,7 +24,7 @@
 
 	display: grid;
 	grid-template-columns: repeat(2,0.4fr);
-    grid-auto-rows: minmax(500px, auto);
+    grid-auto-rows: minmax(300px, auto);
 	
 	
 
@@ -67,7 +66,7 @@
 
 	grid-area: header;
 	
-	background-color: #ffff;
+	background-color:hsl(178, 62%, 88%);
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 
